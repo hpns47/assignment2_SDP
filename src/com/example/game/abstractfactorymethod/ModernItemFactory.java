@@ -3,11 +3,11 @@ package com.example.game.abstractfactorymethod;
 public class ModernItemFactory implements ItemFactory {
     @Override
     public Weapon createWeapon(){
-        return new Gun();
+        return new Gun(GunType.RIFLE);
     }
 
     @Override
     public Armor createArmor(){
-        return new Vest();
+        return new Vest(VestType.KEVLAR);
     }
 }
